@@ -1,0 +1,10 @@
+
+# 服务器配置
+server:
+  port: 8080
+  context-path: /ws
+
+spring:
+# 为了解决多个应用部署在同一个tomcat下，使用Druid引起的错误
+  jmx:
+    default-domain: ws.mtx6.com
